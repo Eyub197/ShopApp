@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ShopApp.Server.Data;
-using ShopApp.Server.Models;
+using ShopApp.Server.Data.Models;
 
 namespace ShopApp.Server.Controllers
 {

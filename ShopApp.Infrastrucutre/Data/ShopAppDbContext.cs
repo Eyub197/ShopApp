@@ -1,9 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
-using ShopApp.Server.Models;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
+using ShopApp.Infrastrucutre.Data.Models;
+using ShopApp.Server.Data.Models;
 
 namespace ShopApp.Server.Data
 {
-    public class ShopAppDbContext:DbContext
+    public class ShopAppDbContext:IdentityDbContext<User,Role,Guid>
     {
         public ShopAppDbContext(DbContextOptions<ShopAppDbContext> options)
             : base(options)

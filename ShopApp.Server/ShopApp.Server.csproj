@@ -10,7 +10,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
     <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.28" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.28" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.28" />
     <PackageReference Include="Microsoft.AspNetCore.SpaProxy">
       <Version>6.*-*</Version>
     </PackageReference>
@@ -30,6 +34,8 @@
     <ProjectReference Include="..\shopapp.client\shopapp.client.esproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
+    <ProjectReference Include="..\ShopApp.Core\ShopApp.Core.csproj" />
+    <ProjectReference Include="..\ShopApp.Infrastrucutre\ShopApp.Infrastrucutre.csproj" />
   </ItemGroup>
 
 </Project>
